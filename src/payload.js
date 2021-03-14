@@ -42,9 +42,16 @@ async function scrapeContent(){
     payload[i] = element.innerText;
   });
   try {
+
+
     // TODO replace this random API I found with our backend when it gets made
     // this random api call is just to prove that we have external connectivity thanks to the payload injection
     const response = await axios.get("https://covid19.mathdro.id/api/countries/canada");
+    
+
+    // Also here is an example of loading sensitive data from the .env file in the root:
+    let password = process.env.PASSWORD; // assuming you set PASSWORD="something" in .env in the root dir of the app
+
     payload['res'] = response.data;
     return JSON.stringify(payload);
   } catch (error) {

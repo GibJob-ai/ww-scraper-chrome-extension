@@ -14,3 +14,14 @@ npm run build
 * Click Load unpacked.
 * Upload the dist folder to chrome
 * The extension should now be available for use
+
+
+# .env for environment variables for sensitive strings ie. tokens, api keys
+* eg.
+```
+echo PASSWORD="example" > .env
+```
+* then load that value in the code with
+```
+process.env.PASSWORD
+```
