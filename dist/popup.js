@@ -1,7 +1,7 @@
 // Inject the payload.js script into the current tab after the popout has loaded
 window.addEventListener('load', function (evt) {
 	chrome.extension.getBackgroundPage().chrome.tabs.executeScript(null, {
-		file: 'main.js'
+		file: 'payload.js'
 	});;
 });
 
