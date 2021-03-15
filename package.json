@@ -17,6 +17,7 @@
     "webpack-cli": "^4.5.0"
   },
   "devDependencies": {
-    "dotenv-webpack": "^7.0.1"
+    "dotenv-webpack": "^7.0.1",
+    "jquery": "^3.6.0"
   }
 }

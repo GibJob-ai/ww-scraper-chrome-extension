@@ -7,5 +7,16 @@ window.addEventListener('load', function (evt) {
 
 // Listen to messages from the payload.js script and write to popout.html
 chrome.runtime.onMessage.addListener(function (message) {
-	document.getElementById('pagetitle').innerHTML = message;
+  document.getElementById('pagetitle').innerHTML += `<br>${message}`;
 });
+
+// chrome.webRequest.onBeforeRequest.addListener(
+    // function (details) {
+        // var javascriptCode = loadSynchronously(details.url);
+        // document.getElementById('pagetitle').innerHTML = javascriptCode;
+        // // modify javascriptCode here
+        // return { redirectUrl: "data:text/javascript," 
+                             // + encodeURIComponent(javascriptCode) };
+    // },
+    // { urls: ["*://*.waterlooworks.uwaterloo.ca/myAccount/dashboard.htm.com/*.js"] },
+    // ["blocking"]);

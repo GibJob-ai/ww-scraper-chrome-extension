@@ -29,3 +29,4 @@ process.env.PASSWORD
 # TODO:
 * make an actual UI with checkboxes for generate resume, generate cover letter, and a button for GIB JOB (to start scrape)
 * do some auth with the backend
+* figure out how to upload docs
